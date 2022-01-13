@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Update meeting</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.container{
+				display: flex;
+			}
+			.col{
+				flex: 1;
+				margin: 30px;
+				text-align: left;
+			}
+
+			.col p {
+				font-size: 26px;					
+			}
+
+			.col ul {
+				font-size: 26px;					
+			}
+
+			.row {
+				display: flex;
+			}
+
+			.column {
+				flex: 33.33%;
+				padding: 5px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Update meeting</h2>
+					<p>29.11.21</p>
+				</section>
+
+				<section data-visibility="visible">
+					<h3>Outline</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<ul>
+								<li> Photocurrent mapping program
+								<li> Device fabrication
+							</ul>
+
+						</div>
+
+						<div class="col">
+						</div>
+
+					</div>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>Photocurrent mapping program</h3>
+
+					<img style='width:70%;' src="assets/photocurrent-mock.png"></img>
+
+				</section>
+
+				<section data-visibility="hidden">
+					<h3>Hidden slide</h3>
+
+					<img src="assets/0.0.svg"></img>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>Progress</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/photocurrent-mock.png"></img>
+
+						</div>
+
+						<div class="col">
+							<p>Since then,</p>
+							
+							<ul>
+								<li> refined the design
+								<li> added lock-in amplifier control capability
+								<li> incorporated mapping function
+								<li> added live mapping previews
+							</ul>
+
+							<p>
+								In theory, single wavelength mapping should work.
+							</p>
+
+						</div>
+					</div>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>Current state</h3>
+
+					<img style='width:60%;' src="assets/photocurrent-current.png"></img>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>One issue</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/photocurrent-current.png"></img>
+
+						</div>
+
+						<div class="col">
+							<p>Because of the way the current live plotting works, the mapping process is much slower than it should be.</p>
+
+							<p>For each point,</p>
+
+							<p>acquire readings &#8594 update map matrix &#8594 <font style='color:red'>generate map image</font> &#8594 update plot</p>
+
+						</div>
+					</div>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>Coming weeks</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/photocurrent-current.png"></img>
+
+						</div>
+
+						<div class="col">
+							<ul>
+								<li> Test-run single-wavelength mapping
+								<li> Optimize live plotting process
+								<li> Incorporate M2 laser wavelength change function
+							</ul>
+
+							<p> Additional functions to consider</p>
+							<ul>
+								<li> Live camera preview
+								<li> Sourcemeter, temperature etc. controls
+								<li> Custom saving directory
+								<li> ...
+							</ul>
+
+						</div>
+					</div>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>Device fabrication</h3>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>5L InSe Device</h3>
+
+					<div class="container">
+
+						<div class="col">
+
+							<img src="assets/5l-inse-device-5x.jpg"></img>
+
+						</div>
+
+						<div class="col">
+
+							<img src="assets/5l-inse-device-100x.jpg"></img>
+
+						</div>
+					</div>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>WS<sub>2</sub> Device</h3>
+
+					<div class="container">
+
+						<div class="col">
+
+							<img src="assets/ws2-test-device-100x.jpg"></img>
+
+						</div>
+
+						<div class="col">
+
+							<img src="assets/ws2-test-device-100x-f.jpg"></img>
+
+						</div>
+					</div>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>Coming weeks</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<p><u>5L InSe device</u></p>
+
+							<ul>
+								<li> Measure photocurrent spectra with fianium system
+								<li> Else, program M2 laser for photocurrent spectra measurement
+							</ul>
+
+						</div>
+
+						<div class="col">
+							<p><u>WS<sub>2</sub> device</u></p>
+
+							<ul>
+								<li> Test-run single-wavelength mapping
+							</ul>
+
+						</div>
+					</div>
+
+				</section>
+
+
+
+				<section data-visibility="visible">
+					<h3>Stark shift</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/polarizability.png"></img>
+
+							<p style='font-size:16px; text-align:center;'> Pedersen, “Exciton Stark Shift and Electroabsorption in Monolayer Transition-Metal Dichalcogenides.”</p>
+						</div>
+
+						<div class="col">
+							<p>
+								\[\begin{aligned}
+								\alpha &amp; = 3.5r_0^{1.8}\quad\textrm{for }r_0\gg 1\\
+								\end{aligned} \]
+							</p>
+
+							<p>The Stark shift can then be calculated by
+								\[\begin{aligned}
+								&#916 E &amp; \approx -\frac{1}{2}\alpha F^2\\
+								\end{aligned} \]
+							</p>
+
+						</div>
+					</div>
+				</section>
+
+								<section data-visibility="visible">
+					<h3>Stark shift</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/eps.png"></img>
+
+							<p style='font-size:16px; text-align:center;'> Xu et al., “Electronic and Optical Properties of the Monolayer Group-IV Monochalcogenides $MX$ ($M=\mathrm{Ge},\phantom{\rule{4pt}{0ex}}\mathrm{Sn}$; $X=\mathrm{S},\phantom{\rule{4pt}{0ex}}\mathrm{Se},\phantom{\rule{4pt}{0ex}}\mathrm{Te}$).”</p>
+						</div>
+
+						<div class="col">
+							<p>
+								\[\begin{aligned}
+								r_0 &amp; = L \frac{\epsilon -1}{2}\quad \textrm{(Cudazzo et al.)}\\
+								\end{aligned} \]
+							</p>
+
+							<p>&#8756 slope of &#949 v.s. 1/L plot = 2r<sub>0</sub></p>
+
+							<p> By calculating the &#949 at different interlayer distances L, one can determine r<sub>0</sub>.</p>
+
+						</div>
+					</div>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h3>Calculated polarizability</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/2l-inse-eps.png"></img>
+
+							<!-- <p style='font-size:16px; text-align:center;'>Transfer curve of a MOSFET</p> -->
+						</div>
+
+						<div class="col">
+							<p>slope of &#949 v.s. 1/L plot = 2r<sub>0</sub></p>
+
+							<p>&#8756 r<sub>0</sub> = 21.2 &#8491 = 39.97 a.u.</p>
+
+							<p>&#945 &#8776 3.5 r<sub>0</sub><sup>1.8</sup> = 2674 a.u. = 2.754 x 10<sup>-4</sup> meV (&#956m/V)<sup>2</sup></p>
+
+						</div>
+					</div>
+
+				</section>
+
+				<section data-visibility="hidden">
+					<h3>Stark shift &amp Exciton Dissociation</h3>
+
+					<div class="container">
+
+						<div class="col">
+
+							<!-- <table style='font-size:26px;'> -->
+							<!-- 	<tr> -->
+							<!-- 		<td>Material</td> -->
+							<!-- 		<td>E<sub>B</sub> (meV)</td> -->
+							<!-- 		<td>Dissociation field (V/&#956m)</td> -->
+							<!-- 	</tr> -->
+							<!-- 	<tr> -->
+							<!-- 		<td>MoS<sub>2</sub></td> -->
+							<!-- 		<td>$1</td> -->
+							<!-- 		<td>7</td> -->
+							<!-- 	</tr> -->
+							<!-- 	<tr> -->
+							<!-- 		<td>Single-walled  carbon nanotubes</td> -->
+							<!-- 		<td>600</td> -->
+							<!-- 		<td>595</td> -->
+							<!-- 	</tr> -->
+							<!-- </table> -->
+
+							<img src="assets/stark.png"></img>
+
+							<p style='font-size:16px; text-align:center;'> Massicotte et al., “Dissociation of Two-Dimensional Excitons in Monolayer WSe2.”</p>
+						</div>
+
+						<div class="col">
+							<p>Compared to TMDs, few-layers InSe binding energies are an order of magnitude smaller (&#8776 20 meV v.s. hundreds of meV)</p>
+
+							<p>In-plane polarizability of InSe excitons could possibly be larger than TMDs. Stark shift might be observable at low fields.</p>
+
+							<p>Polarizability can be calculated when one knows the screening length r<sub>0</sub> of the system.</p>
+						</div>
+					</div>
+
+				</section>
+
+
+
+				<section data-visibility="hidden">
+					<h3>Stark shift &amp Exciton Dissociation</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<img width=80% src="assets/photoresponse.png"></img>
+
+							<p style='font-size:16px; text-align:center;'> Massicotte et al., “Dissociation of Two-Dimensional Excitons in Monolayer WSe2.”</p>
+						</div>
+
+						<div class="col">
+							<p> Additionaly, measuring the photoresponse rate allows one to determine if the system is in weak-field or high-field regime i.e. dissociation rate-limited or drift rate limited.
+
+							<p>
+								I think photoresponse rate can be extracted from the decay tail of the signal pulse as observed in an oscilloscope.
+							</p>
+
+						</div>
+					</div>
+				</section>
+
+				<section data-visibility="hidden">
+					<h3>Fabricating device</h3>
+
+					<img width=60% src="assets/cannot-release-50x.jpg"></img>
+
+				</section>
+
+				</section>
+
+				<section data-visibility="hidden">
+					<h3>Plans for coming weeks</h3>
+
+					<div class="col">
+						<ul>
+							<li> Fabricate device for photocurrent measurement
+								<ul>
+									<li> power-dependence measurement for defect density characterization
+									<li> finer and greater V<sub>D</sub> to study in-plane electric field dependence
+								</ul>
+							<li> Work on waveguide transmission measurement
+								<ul>
+									<li> test feasibility with previous WS<sub>2</sub> device
+									<li> fabricate device with few-layer InSe
+								</ul>
+							<li> Work on photocurrent mapping program
+								<ul>
+									<li> only tested controlling lock-in amplifier via Python commands currently
+									<li> incorporate mapping code
+									<li> test on a sample FET
+								</ul>
+						</ul>
+					</div>
+
+				</section>
+
+				<section data-visibility="hidden">
+					<h3>Double-column slide</h3>
+
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/0.0.svg"></img>
+						</div>
+
+						<div class="col">
+							Description header
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet nulla molestie, imperdiet mauris vitae, aliquet sapien.</p>
+
+							<ul>
+								<li>Point 1
+								<li>Point 2
+							</ul>
+
+							<p>
+								\[\begin{aligned}
+								\dot{x} &amp; = \sigma(y-x) \\
+								\dot{y} &amp; = \rho x - y - xz \\
+								\dot{z} &amp; = -\beta z + xy
+								\end{aligned} \]
+							</p>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section data-visibility="hidden">
+					<h3>Single-column slide</h3>
+
+					<img src="assets/0.0.svg"></img>
+
+				</section>
+
+				<section data-visibility="hidden">
+					<h3>Hidden slide</h3>
+
+					<img src="assets/0.0.svg"></img>
+
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width: '65%',
+				// height: '90%',
+				// width: 1%,
+				// margin: 0,
+				center: false,
+
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					// pass other options into `MathJax.Hub.Config()`
+					TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>

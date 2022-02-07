@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
 		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 			.container{
 				display: flex;
 			}
@@ -48,24 +50,87 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2>Update meeting</h2>
-					<p>29.11.21</p>
+					<h2 style="font-weight: 300">Update meeting</h2>
+					<div style="width: 60%; margin: auto;">
+						<h3 style="font-size: 20px; border-top: 4px double; border-bottom: 4px double; text-transform: uppercase; font-weight:300; padding:3px 0px 3px 0px;">Justin Zhou Yong &#8226 11.02.22</h3>
+					</div>
+				</section>
+
+				<!------------->
+				<!-- OUTLINE -->
+				<!------------->
+
+				<section data-visibility="visible">
+					<h3 style="font-weight: 300;">Outline</h3>
+
+					<div class="container">
+
+						<div class="col" style="border:0px solid; border-radius:0px;padding-bottom:25px">
+							<p style="text-align: center; text-transform:uppercase; letter-spacing: -0px; font-weight: 700;"><mark style="background-color:aquamarine; padding:0px 10px 0px 10px;">InSe device</mark></p>
+							<p style="text-align:center;font-style:italic;font-weight:300;">
+								Chip carrier fabrication
+								<br>
+								<!-- Output characteristics -->
+							</p>
+							<div>
+								<img style="width:50%;display:block; margin:auto;" src="assets/20220211/chip-carrier-pcb.png"></img>
+							</div>
+						</div>
+
+						<div class="col" style="border-right:0px solid; border-left:0px solid">
+							<p style="text-align: center; text-transform:uppercase; letter-spacing: -0px; font-weight: 700;"><mark style="background-color:aquamarine; padding:0px 10px 0px 10px;">Waveguide</mark></p>
+							<p style="text-align:center;font-style:italic;font-weight:300">
+								Absence of InSe PL
+								<br>
+								Y-junction waveguide fabrication
+							</p>
+
+							<div>
+								<img style="width:70%;display:block;margin: auto;" src="assets/20220211/10x-100mjcm2-0-defocus-az1512-5500rpm.jpg"></img>
+							</div>
+						</div>
+
+						<!-- <div class="col"> -->
+						<!-- 	<p style="text-align: center; text-transform:uppercase; letter-spacing: -0px; font-weight: 700;"><mark style="background-color:aquamarine; padding:0px 10px 0px 10px;">Equipment</mark></p> -->
+						<!-- 	<p style="text-align:center;font-style:italic;font-weight:300"> -->
+						<!-- 		pyXPHySpec -->
+						<!-- 		<\!-- <br> -\-> -->
+						<!-- 		<\!-- Mercury ITC -\-> -->
+						<!-- 	</p> -->
+
+						<!-- 	<div> -->
+						<!-- 		<img style="width:70%;display:block;margin: auto;" src="assets/20220121/pyxphyspec.png"></img> -->
+						<!-- 	</div> -->
+						<!-- </div> -->
+
+					</div>
+
+
+				</section>
+
+				<!----------------->
+				<!-- INSE DEVICE -->
+				<!----------------->
+
+				<section data-visibility="visible">
+					<h2 style="margin:200px 0px 200px 0px; font-weight:300">InSe Device</h2>
 				</section>
 
 				<section data-visibility="visible">
-					<h3>Outline</h3>
+					<h4 style="font-weight:300">Chip carrier design and fabrication</h4>
 
 					<div class="container">
 
 						<div class="col">
-							<ul>
-								<li> Photocurrent mapping program
-								<li> Device fabrication
-							</ul>
-
+							<img style="display:block; margin:auto; width:70%" src="assets/20220211/example-device.jpg"></img>
 						</div>
 
 						<div class="col">
+							<img style="display:block; margin:auto; width:70%" src="assets/20220211/chip-carrier-pcb.png"></img>
+						</div>
+
+						<div class="col">
+							<img style="display:block; margin:auto; width:70%" src="assets/20220211/chip-carrier-pcb.png"></img>
 						</div>
 
 					</div>
@@ -73,10 +138,165 @@
 				</section>
 
 				<section data-visibility="visible">
-					<h3>Photocurrent mapping program</h3>
+					<h4 style="font-weight:300">Device</h4>
 
-					<img style='width:70%;' src="assets/photocurrent-mock.png"></img>
+					<div class="container">
 
+						<div class="col">
+							<img src="assets/20220121/4l-inse-device-100x.jpg"></img>
+
+							</div>
+
+													<div class="col">
+							<img src="assets/20220121/4l-inse-pl-rt.png"></img>
+
+						</div>
+					</div>
+
+				</section>
+
+				<section data-visibility="visible">
+					<h4 style="font-weight: 300">Cryostat issue</h4>
+
+					<div class="container">
+
+						<div class="col">
+							<img style="width:100%;display:block;margin: auto;" src="assets/20220121/condensation.jpg"></img>
+						</div>
+
+						<div class="col">
+							<br>
+							<ul>
+								<li> normal vacuum level reading (10<sup>-6</sup> mbar)
+								<li> condensation occur during cooling
+								<li> didn't manage to rectify issue yet
+							</ul>
+
+						</div>
+					</div>
+				</section>
+
+				<section data-visibility="visible">
+					<h4 style="font-weight:300">Output characteristics</h4>
+
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/20220121/output-rt.png"></img>
+
+						</div>
+
+						<div class="col">
+						<br>
+							<ul>
+								<li> measured at RT
+								<li> asymmetric
+								<li> non-linear increasing I<sub>ds</sub>
+								<li> no saturation observed
+							</ul>
+
+						</div>
+					</div>
+					</section>
+
+				<section data-visibility="visible">
+					<section>
+						<h4 style="font-weight:300">Output characteristics</h4>
+
+						<div class="container">
+
+							<div class="col">
+								<img src="assets/20220121/exp-fit.png"></img>
+
+							</div>
+
+							<div class="col">
+								<ul>
+									<li> I<sub>ds</sub>&#8733 V<sub>ds</sub><sup>m</sup>
+									<li> m>2 implies space-charge-limited current with exponential trap charge distribution
+								</ul>
+
+								<p>
+									<table style='font-size:20px;text-align:center'>
+										<tr>
+											<td>V<sub>g</sub> (V)</td>
+											<td>m</td>
+										</tr>
+										<tr>
+											<td>80</td>
+											<td>3.29</td>
+										</tr>
+										<tr>
+											<td>60</td>
+											<td>4.50</td>
+										</tr>
+										<tr>
+											<td>40</td>
+											<td>4.56</td>
+										</tr>
+										<tr>
+											<td>20</td>
+											<td>5.68</td>
+										</tr>
+
+									</table>
+								</p>
+
+								<ul>
+									<li> For a trap-free material, m=2 (Child's law)
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4 style="font-weight:300">Space-charge-limited current</h4>
+
+						<div class="container">
+
+							<div class="col">
+								<img src="assets/20220121/space-charge-paper.png"></img>
+
+							</div>
+
+							<div class="col">
+								<img src="assets/20220121/exponential-distribution.png"></img>
+								<br>
+								<img src="assets/20220121/space-charge-limited-current.png"></img>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4 style="font-weight:300">Determining trap density</h4>
+
+						<img style='display:block;margin:auto;width:30%;' src="assets/20220121/trap-density.png"></img>
+
+						<p style="text-align: center; font-size:12px">Joung et al., Appl. Phys. Lett. 97, 093105 (2010)</p>
+
+					</section>
+
+				</section>
+
+					<section data-visibility="visible">
+					<h4 style="font-weight:300;">To-do</h4>
+					<div class="container">
+
+						<div class="col">
+							<img src="assets/20220121/exp-fit.png"></img>
+							<!-- <img style='display:block;margin:auto;width:70%;' src="assets/20220121/bulk-inse-waveguide.jpg"></img> -->
+						</div>
+
+						<div class="col">
+							<ul>
+								<li> migrate to new optical setup
+									<ul>
+										<li> write measurement program
+										<li> reuse LABView program
+									</ul>
+							</ul>
+						</div>
+					</div>
 				</section>
 
 				<section data-visibility="hidden">
@@ -86,43 +306,213 @@
 
 				</section>
 
-				<section data-visibility="visible">
-					<h3>Progress</h3>
+				<!--------------->
+				<!-- Waveguide -->
+				<!--------------->
 
+				<section data-visibility="visible">
+					<h2 style="margin:200px 0px 200px 0px; font-weight:300">Waveguide</h2>
+				</section>
+
+				<section data-visibility="visible">
+					<section>
+						<h4 style="font-weight:300;">Y-junction waveguide</h4>
+						<div class="container">
+
+							<div class="col">
+								<img style='display:block;margin:auto;width:100%;' src="assets/20220211/10x-100mjcm2-0-defocus-az1512-5500rpm.jpg"></img>
+							</div>
+
+							<div class="col">
+								<!-- <p style="font-weight:700">Argument against</p> -->
+								<ul>
+									<li> attempted to fabricate Y-junction waveguide
+									<li> achieved waveguide width of ~5-6 &#956m (instead of 1-2 &#956m)
+									<li> larger than expected width possibly due to unoptimized defocus value
+									<li> a scan over a range of defocus values can be performed to find optimal value
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4 style="font-weight:300;">Balanced detection setup</h4>
+						<div class="container">
+							<div class="col">
+								<img style='display:block;margin:auto;width:100%;' 	src="assets/20220121/literature.png"></img>
+							</div>
+
+							<div class="col">
+								<img style='display:block;margin:auto;width:100%;' 	src="assets/20220121/balanced-setup.jpg"></img>
+							</div>
+						</div>
+
+					</section>
+				</section>
+
+				<section data-visibility="visible">
+					<h4 style="font-weight:300;">InSe-embedded waveguide</h4>
 					<div class="container">
 
 						<div class="col">
-							<img src="assets/photocurrent-mock.png"></img>
-
+							<img style='display:block;margin:auto;width:100%;' src="assets/20220211/inse-on-waveguide-20x-mirrored-cropped.jpg"></img>
+							<p style="text-align:center; font-size:16px">Before liftoff</p>
 						</div>
 
 						<div class="col">
-							<p>Since then,</p>
-							
-							<ul>
-								<li> refined the design
-								<li> added lock-in amplifier control capability
-								<li> incorporated mapping function
-								<li> added live mapping previews
-							</ul>
+							<img style='display:block;margin:auto;width:100%;' src="assets/20220211/20x-cropped.jpg"></img>
+							<p style="text-align:center; font-size:16px">After liftoff</p>
+						</div>
 
-							<p>
-								In theory, single wavelength mapping should work.
-							</p>
+						<div class="col">
+							<ul>
+								<li> exfoliated flake estimated to be 7-9 layers thick
+								<li> flake contrast is low after liftoff (close to being invisible)
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section data-visibility="visible">
+					<h4 style="font-weight:300;">Absence of InSe PL</h4>
+					<div class="container">
+
+						<div class="col">
+							<img style='display:block;margin:auto;width:100%;' src="assets/20220211/inse-waveguide-different-excitation-wavelengths.png"></img>
+							<p style="text-align:center; font-size:16px">Photoluminescence of flake at different excitation wavelengths </p>
+						</div>
+
+						<!-- <div class="col"> -->
+						<!-- 	<img style='display:block;margin:auto;width:100%;' src="assets/20220211/20x-cropped.jpg"></img> -->
+						<!-- 	<p style="text-align:center; font-size:16px">After liftoff</p> -->
+						<!-- </div> -->
+
+						<div class="col">
+							<ul>
+								<li> expected emission around 900 nm but did not observe it
+								<li> spectra dominated by emission from photoresist
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section data-visibility="visible">
+					<h4 style="font-weight:300;">Absence of InSe PL</h4>
+					<div class="container">
+
+						<div class="col">
+							<img style='display:block;margin:auto;width:100%;' src="assets/20220211/inse-waveguide-substrate.png"></img>
+							<p style="text-align:center; font-size:16px">Photoluminescence of flake and substrate</p>
+						</div>
+
+						<!-- <div class="col"> -->
+						<!-- 	<img style='display:block;margin:auto;width:100%;' src="assets/20220211/20x-cropped.jpg"></img> -->
+						<!-- 	<p style="text-align:center; font-size:16px">After liftoff</p> -->
+						<!-- </div> -->
+
+						<div class="col">
+							<ul>
+								<li> largely similar profile between spectra of InSe flake and substrate
+								<li> confirms absence of InSe PL
+							</ul>
+						</div>
+					</div>
+				</section>
+
+								<section data-visibility="visible">
+					<h4 style="font-weight:300;">Absence of InSe PL</h4>
+					<div class="container">
+
+						<div class="col">
+							<img style='display:block;margin:auto;width:100%;' src="assets/20220211/inse-waveguide-vs-bulk.png"></img>
+							<p style="text-align:center; font-size:16px">Photoluminescence of InSe flake v.s. a random bulk InSe</p>
+						</div>
+
+						<!-- <div class="col"> -->
+						<!-- 	<img style='display:block;margin:auto;width:100%;' src="assets/20220211/20x-cropped.jpg"></img> -->
+						<!-- 	<p style="text-align:center; font-size:16px">After liftoff</p> -->
+						<!-- </div> -->
+
+						<div class="col">
+							<ul>
+								<li> comparison with a random bulk InSe to exclude possible setup issue
+							</ul>
+						</div>
+					</div>
+			</section>
+
+				<section data-visibility="visible">
+					<h4 style="font-weight:300;">InSe-embedded waveguide 2</h4>
+					<div class="container">
+
+						<div class="col">
+							<img style='display:block;margin:auto;width:100%;' src="assets/20220211/inse-waveguide-50x.jpg"></img>
+						</div>
+
+						<div class="col">
+							<ul>
+								<li> Encapsulated InSe with hBN before transfer onto waveguide to prevent degradation
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section data-visibility="visible">
+					<h4 style="font-weight:300;">To-do</h4>
+					<div class="container">
+
+						<div class="col">
+							<img style='display:block;margin:auto;width:70%;' src="assets/20220121/bulk-inse-waveguide.jpg"></img>
+						</div>
+
+						<div class="col">
+							<ul>
+								<li> Measure polarization-dependent PL
+								<li> Proceed with the Y-junction waveguide?
+									<ul>
+										<li> method to increase beam separation
+										<li> device fabrication
+									</ul>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!--------------->
+				<!-- Equipment -->
+				<!--------------->
+
+				<section data-visibility="visible">
+					<h2 style="margin:200px 0px 200px 0px; font-weight:300">Equipment</h2>
+				</section>
+
+								<section data-visibility="visible">
+					<h4 style="font-weight:300;">pyXPHySpec</h4>
+					<div class="container">
+
+						<div class="col">
+							<img style='display:block;margin:auto;width:70%;' src="assets/20220121/pyxphyspec.png"></img>
+						</div>
+
+						<div class="col">
+
+							<ul>
+								<li> able to communicate with filter using Python
+							</ul>
 
 						</div>
 					</div>
 
 				</section>
 
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>Current state</h3>
 
 					<img style='width:60%;' src="assets/photocurrent-current.png"></img>
 
 				</section>
 
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>One issue</h3>
 
 					<div class="container">
@@ -144,7 +534,7 @@
 
 				</section>
 
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>Coming weeks</h3>
 
 					<div class="container">
@@ -174,12 +564,12 @@
 
 				</section>
 
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>Device fabrication</h3>
 
 				</section>
 
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>5L InSe Device</h3>
 
 					<div class="container">
@@ -199,7 +589,7 @@
 
 				</section>
 
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>WS<sub>2</sub> Device</h3>
 
 					<div class="container">
@@ -219,7 +609,7 @@
 
 				</section>
 
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>Coming weeks</h3>
 
 					<div class="container">
@@ -246,9 +636,7 @@
 
 				</section>
 
-
-
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>Stark shift</h3>
 
 					<div class="container">
@@ -276,7 +664,7 @@
 					</div>
 				</section>
 
-								<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>Stark shift</h3>
 
 					<div class="container">
@@ -303,7 +691,7 @@
 
 				</section>
 
-				<section data-visibility="visible">
+				<section data-visibility="hidden">
 					<h3>Calculated polarizability</h3>
 
 					<div class="container">
@@ -334,22 +722,22 @@
 						<div class="col">
 
 							<!-- <table style='font-size:26px;'> -->
-							<!-- 	<tr> -->
-							<!-- 		<td>Material</td> -->
-							<!-- 		<td>E<sub>B</sub> (meV)</td> -->
-							<!-- 		<td>Dissociation field (V/&#956m)</td> -->
-							<!-- 	</tr> -->
-							<!-- 	<tr> -->
-							<!-- 		<td>MoS<sub>2</sub></td> -->
-							<!-- 		<td>$1</td> -->
-							<!-- 		<td>7</td> -->
-							<!-- 	</tr> -->
-							<!-- 	<tr> -->
-							<!-- 		<td>Single-walled  carbon nanotubes</td> -->
-							<!-- 		<td>600</td> -->
-							<!-- 		<td>595</td> -->
-							<!-- 	</tr> -->
-							<!-- </table> -->
+								<!-- 	<tr> -->
+									<!-- 		<td>Material</td> -->
+									<!-- 		<td>E<sub>B</sub> (meV)</td> -->
+									<!-- 		<td>Dissociation field (V/&#956m)</td> -->
+									<!-- 	</tr> -->
+								<!-- 	<tr> -->
+									<!-- 		<td>MoS<sub>2</sub></td> -->
+									<!-- 		<td>$1</td> -->
+									<!-- 		<td>7</td> -->
+									<!-- 	</tr> -->
+								<!-- 	<tr> -->
+									<!-- 		<td>Single-walled  carbon nanotubes</td> -->
+									<!-- 		<td>600</td> -->
+									<!-- 		<td>595</td> -->
+									<!-- 	</tr> -->
+								<!-- </table> -->
 
 							<img src="assets/stark.png"></img>
 
@@ -398,111 +786,111 @@
 
 				</section>
 
-				</section>
+</section>
 
-				<section data-visibility="hidden">
-					<h3>Plans for coming weeks</h3>
+<section data-visibility="hidden">
+	<h3>Plans for coming weeks</h3>
 
-					<div class="col">
-						<ul>
-							<li> Fabricate device for photocurrent measurement
-								<ul>
-									<li> power-dependence measurement for defect density characterization
-									<li> finer and greater V<sub>D</sub> to study in-plane electric field dependence
-								</ul>
-							<li> Work on waveguide transmission measurement
-								<ul>
-									<li> test feasibility with previous WS<sub>2</sub> device
-									<li> fabricate device with few-layer InSe
-								</ul>
-							<li> Work on photocurrent mapping program
-								<ul>
-									<li> only tested controlling lock-in amplifier via Python commands currently
-									<li> incorporate mapping code
-									<li> test on a sample FET
-								</ul>
-						</ul>
-					</div>
+	<div class="col">
+		<ul>
+			<li> Fabricate device for photocurrent measurement
+				<ul>
+					<li> power-dependence measurement for defect density characterization
+					<li> finer and greater V<sub>D</sub> to study in-plane electric field dependence
+				</ul>
+			<li> Work on waveguide transmission measurement
+				<ul>
+					<li> test feasibility with previous WS<sub>2</sub> device
+					<li> fabricate device with few-layer InSe
+				</ul>
+			<li> Work on photocurrent mapping program
+				<ul>
+					<li> only tested controlling lock-in amplifier via Python commands currently
+					<li> incorporate mapping code
+					<li> test on a sample FET
+				</ul>
+		</ul>
+	</div>
 
-				</section>
+</section>
 
-				<section data-visibility="hidden">
-					<h3>Double-column slide</h3>
+<section data-visibility="hidden">
+	<h3>Double-column slide</h3>
 
-					<div class="container">
+	<div class="container">
 
-						<div class="col">
-							<img src="assets/0.0.svg"></img>
-						</div>
-
-						<div class="col">
-							Description header
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet nulla molestie, imperdiet mauris vitae, aliquet sapien.</p>
-
-							<ul>
-								<li>Point 1
-								<li>Point 2
-							</ul>
-
-							<p>
-								\[\begin{aligned}
-								\dot{x} &amp; = \sigma(y-x) \\
-								\dot{y} &amp; = \rho x - y - xz \\
-								\dot{z} &amp; = -\beta z + xy
-								\end{aligned} \]
-							</p>
-
-						</div>
-
-					</div>
-
-				</section>
-
-				<section data-visibility="hidden">
-					<h3>Single-column slide</h3>
-
-					<img src="assets/0.0.svg"></img>
-
-				</section>
-
-				<section data-visibility="hidden">
-					<h3>Hidden slide</h3>
-
-					<img src="assets/0.0.svg"></img>
-
-				</section>
-
-			</div>
+		<div class="col">
+			<img src="assets/0.0.svg"></img>
 		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/math/math.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				width: '65%',
-				// height: '90%',
-				// width: 1%,
-				// margin: 0,
-				center: false,
+		<div class="col">
+			Description header
 
-				math: {
-					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
-					config: 'TeX-AMS_HTML-full',
-					// pass other options into `MathJax.Hub.Config()`
-					TeX: { Macros: { RR: "{\\bf R}" } }
-				},
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet nulla molestie, imperdiet mauris vitae, aliquet sapien.</p>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
-			});
-		</script>
-	</body>
+			<ul>
+				<li>Point 1
+				<li>Point 2
+			</ul>
+
+			<p>
+				\[\begin{aligned}
+				\dot{x} &amp; = \sigma(y-x) \\
+				\dot{y} &amp; = \rho x - y - xz \\
+				\dot{z} &amp; = -\beta z + xy
+				\end{aligned} \]
+			</p>
+
+		</div>
+
+	</div>
+
+</section>
+
+<section data-visibility="hidden">
+	<h3>Single-column slide</h3>
+
+	<img src="assets/0.0.svg"></img>
+
+</section>
+
+<section data-visibility="hidden">
+	<h3>Hidden slide</h3>
+
+	<img src="assets/0.0.svg"></img>
+
+</section>
+
+</div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/math/math.js"></script>
+<script>
+	// More info about initialization & config:
+	// - https://revealjs.com/initialization/
+	// - https://revealjs.com/config/
+	Reveal.initialize({
+		hash: true,
+		width: '65%',
+		// height: '90%',
+		// width: 1%,
+		// margin: 0,
+		center: false,
+
+		math: {
+			mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+			config: 'TeX-AMS_HTML-full',
+			// pass other options into `MathJax.Hub.Config()`
+			TeX: { Macros: { RR: "{\\bf R}" } }
+		},
+
+		// Learn about plugins: https://revealjs.com/plugins/
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+	});
+</script>
+</body>
 </html>

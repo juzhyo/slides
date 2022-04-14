@@ -13,6 +13,17 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
+		<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+		<script>
+			$(function(){
+				$("#includedContent").load("assets/20220418/0.2vds-0vg-67k-pc.json"); 
+			});
+		</script>
+
+
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
@@ -357,7 +368,14 @@
 					<div class="container">
 
 						<div class="col">
-							<img style='display:block;margin:auto;width:100%;' src="assets/20220325/ple-map-10k.png"></img>
+							<div id="view"></div>
+							<script>
+								vegaEmbed(
+									'#view',
+									'assets/20220418/0.2vds-0vg-67k-pc.json'
+								);
+							</script>
+
 							<p style='text-align:center; font-size:16px;'>PLE map of InSe at 10K. Excitation power: 40 &#956W.</p>
 						</div>
 
